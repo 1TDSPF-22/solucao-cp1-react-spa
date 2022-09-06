@@ -60,6 +60,12 @@ export default function App() {
             qtd: 10000,
             categoria: "acougue"
         }
+        ,
+        {
+            nomeProduto: "Toca de Lã",
+            qtd: 55,
+            categoria: "Têxtil"
+        }
     ])
 
     return (
