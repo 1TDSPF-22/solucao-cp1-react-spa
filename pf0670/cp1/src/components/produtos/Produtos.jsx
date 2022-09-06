@@ -1,11 +1,11 @@
 import React from 'react'
-
+import './Produtos.css'
 export default function Produtos(props) {
     return (
         <div>
             <h2>PRODUTOS</h2>
 
-            <table border={1}>
+            <table className="tblProdutos" border={1}>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -17,7 +17,8 @@ export default function Produtos(props) {
                 <tbody>
 
                     {props.produtos.map((p, i) =>
-                        <tr key={i} style={i % 2 === 0 ? { backgroundColor: "#ccc" } : { backgroundColor: "#afc" }}>
+                        // <tr key={i} style={i % 2 === 0 ? { backgroundColor: "#ccc" } : { backgroundColor: "#afc" }}>
+                        <tr key={i}>
                             <td>{i + 1}</td>
                             <td>{p.nomeProduto}</td>
                             <td>{p.qtd}</td>
