@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Produtos from "../src/components/produtos/Produtos";
 
 export default function App() {
   const listaDeProdutos = [
@@ -35,6 +36,7 @@ export default function App() {
   return (
     <>
       <h1>CP1 de RWD 2º SEMESTRE</h1>
+      <Produtos lista={produtos} />
     </>
   );
 }
