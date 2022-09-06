@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tb1Produtos {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100vw;
+  margin: auto;
+}
+
+.tb1Produtos td,
+.tb1Produtos th {
+  border: 2px solid #ddd;
+  padding: 6px;
+}
+
+.tb1Produtos tr:nth-child(even) {
+  background-color: #8d8383;
+}
+
+.tb1Produtos th {
+  text-align: left;
+  background-color: aqua;
+  color: #ddd;
+  padding: 1.2vh 0;
+}
+
+.tb1Produtos tfoot td {
+  padding: 0;
+}
+
+.tb1Produtos tfoot td caption {
+  display: block;
+  text-align: center;
+  background-color: aqua;
+  color: #ddd;
+  padding: 1.2vh 0;
+  font-weight: bold;
+}
