@@ -1,3 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .tblProdutos {
     font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90vw;
+    margin: 1vh 1vw;
+}
+
+.tblProdutos td, .tblProdutos th {
+    border: 2px solid #ddd;
+    padding: 6px;
+}
+
+.tblProdutos tr:nth-child(even){
+    background-color: #8d8283
+}
+
+.tblProdutos th{
+    text-align: left;
+    background-color: blue;
+    color: #ddd;
+    padding: 1.2vh 0;
+}
+
+.tblProdutos tfoot td {
+    padding: 0;
+}
+
+.tblProdutos tfoot th caption{
+    display: block;
+    text-align: center;
+    background-color: blue;
+    color: #ddd;
+    padding: 1.2vh 0;
+    font-weight: bold;
 }
