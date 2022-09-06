@@ -4,7 +4,7 @@ export default function Produtos(props) {
   return (
     <>
       <h2>Produtos</h2>
-      <table>
+      <table className="tblProdutos" border={1}>
         <thead>
           <tr>
             <th>Id</th>
