@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
-import Produtos from "../src/components/produtos/Produtos";
+import Produtos from "./components/produtos/Produtos";
 
 export default function App() {
   const listaDeProdutos = [
     {
       nomeProduto: "Mouse Óptico",
       qtd: 100,
-      categoria: "informatica",
+      categoria: "Informática",
     },
     {
       nomeProduto: "Metanfetamina",
@@ -25,7 +25,7 @@ export default function App() {
       categoria: "Armas",
     },
     {
-      nomeProduto: "Biblia",
+      nomeProduto: "Bíblia",
       qtd: 48,
       categoria: "Religião",
     },
