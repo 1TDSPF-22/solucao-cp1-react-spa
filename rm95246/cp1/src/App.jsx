@@ -42,12 +42,12 @@ export default function App() {
             categoria: "Informatica"
         },
         {
-            nomeProduto: "Neutrogena",
+            nomeProduto: "Hidratante",
             qtd: 1230,
             categoria: "Higiene"
         },
         {
-            nomeProduto: "Desodorante Avanço",
+            nomeProduto: "Desodorante",
             qtd: 5000,
             categoria: "Perfumaria"
         },
