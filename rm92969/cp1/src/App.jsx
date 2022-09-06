@@ -15,6 +15,10 @@ export default function App(){
             categoria : "higiene"
         },
         {
+            nomeProduto : "Desodorante",
+            qtd : 1230, 
+            categoria : "higiene"
+        },{
             nomeProduto : "Netrogena",
             qtd : 1230, 
             categoria : "higiene"
@@ -22,14 +26,23 @@ export default function App(){
             nomeProduto : "Netrogena",
             qtd : 1230, 
             categoria : "higiene"
-        },
+        },{
+            nomeProduto : "Netrogena",
+            qtd : 1230, 
+            categoria : "higiene"
+        },{
+            nomeProduto : "Netrogena",
+            qtd : 1230, 
+            categoria : "higiene"
+        }
     ]
 
-    const[produtos, setProdutos] = useState()
+    const[produtos, setProdutos] = useState(listaDeProdutos)
 
     return(
         <>
             <h1>CP1 de RWD 2º SEMESTRE</h1>
+            <Produtos produtos={produtos} />
         </>
     )
 }
