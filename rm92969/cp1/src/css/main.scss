@@ -5,3 +5,13 @@ body{
     background-color: $cor-de-fundo;
     color: $cor-do-texto;
 }
+
+div{
+    $cor-do-p : blue;
+    p {
+        
+        color: $cor-do-p;
+    }
+
+    color: $cor-do-p;
+} 
