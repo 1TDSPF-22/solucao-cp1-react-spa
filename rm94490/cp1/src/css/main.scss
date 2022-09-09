@@ -1,0 +1,15 @@
+@import "titulo";
+$text-color: white;
+$background-color: #222222;
+
+body {
+	background-color: $background-color;
+	color: $text-color;
+}
+
+div {
+	p {
+		$cor-do-p: grey;
+		color: $cor-do-p;
+	}
+}

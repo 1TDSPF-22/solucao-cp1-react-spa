@@ -1,0 +1,57 @@
+$odd-row-color: #696d8d;
+$even-row-color: #7a80b4;
+$table-names-color: #3d4272;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.tblProdutos {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 90vw;
+	margin: auto;
+
+	td,
+	th {
+		border: 2px solid #ddd;
+		padding: 6px;
+	}
+
+	tr {
+		&:nth-child(even) {
+			background-color: $even-row-color;
+		}
+		&:nth-child(odd) {
+			background-color: $odd-row-color;
+		}
+		&:hover:nth-child(even) {
+			background-color: darken($color: $even-row-color, $amount: 20);
+		}
+		&:hover:nth-child(odd) {
+			background-color: darken($color: $odd-row-color, $amount: 20);
+		}
+	}
+
+	th {
+		text-align: left;
+		background-color: $table-names-color;
+		color: #ddd;
+		padding: 1.2vh 0;
+	}
+
+	tfoot td {
+		padding: 0;
+	}
+
+	tfoot td caption {
+		display: block;
+		text-align: center;
+		background-color: $table-names-color;
+		color: #ddd;
+		padding: 1.2vh 0;
+		font-weight: bold;
+	}
+}

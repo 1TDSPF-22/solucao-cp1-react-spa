@@ -1,85 +1,57 @@
-import React from "react"
-import { useState } from "react"
-import Produtos from "./components/produtos/Produtos"
+import React from "react";
+import { useState } from "react";
+import Produtos from "./components/produtos/Produtos";
 
 export default function App() {
 
-    // const listaDeProdutos = [
-    //     {
-    //         nomeProduto: "Mouse Óptico",
-    //         qtd: 100,
-    //         categoria: "informatica"
-    //     },
-    //     {
-    //         nomeProduto: "Netrogena",
-    //         qtd: 1230,
-    //         categoria: "higiene"
-    //     },
-    //     {
-    //         nomeProduto: "Desodorante Avanço",
-    //         qtd: 5000,
-    //         categoria: "perfumaria"
-    //     },
-    //     {
-    //         nomeProduto: "Balde de PVC",
-    //         qtd: 555,
-    //         categoria: "bazar"
-    //     },
-    //     {
-    //         nomeProduto: "Acem sem Osso",
-    //         qtd: 10000,
-    //         categoria: "acougue"
-    //     },
-    // ]
+	const [produtos, setProdutos] = useState([
+		{
+			nomeProduto: "Mouse Óptico",
+			qtd: 100,
+			categoria: "informatica",
+		},
+		{
+			nomeProduto: "Netrogena",
+			qtd: 1230,
+			categoria: "higiene",
+		},
+		{
+			nomeProduto: "Desodorante Avanço",
+			qtd: 5000,
+			categoria: "perfumaria",
+		},
+		{
+			nomeProduto: "Balde de PVC",
+			qtd: 555,
+			categoria: "bazar",
+		},
+		{
+			nomeProduto: "Acem sem Osso",
+			qtd: 10000,
+			categoria: "acougue",
+		},
+		{
+			nomeProduto: "Touca de Lã",
+			qtd: 55,
+			categoria: "Têxtil",
+		},
+	]);
 
-    // const [produtos, setProdutos] = useState(listaDeProdutos)
-
-    const [produtos, setProdutos] = useState([
-        {
-            nomeProduto: "Mouse Óptico",
-            qtd: 100,
-            categoria: "informatica"
-        },
-        {
-            nomeProduto: "Netrogena",
-            qtd: 1230,
-            categoria: "higiene"
-        },
-        {
-            nomeProduto: "Desodorante Avanço",
-            qtd: 5000,
-            categoria: "perfumaria"
-        },
-        {
-            nomeProduto: "Balde de PVC",
-            qtd: 555,
-            categoria: "bazar"
-        },
-        {
-            nomeProduto: "Acem sem Osso",
-            qtd: 10000,
-            categoria: "acougue"
-        }
-        ,
-        {
-            nomeProduto: "Toca de Lã",
-            qtd: 55,
-            categoria: "Têxtil"
-        }
-    ])
-
-    return (
-        <>
-            <h1>CP1 de RWD 2º SEMESTRE</h1>
-            <Produtos produtos={produtos} />
-        </>
-    )
+	return (
+		<>
+			<h1>CP1 de RWD 2º SEMESTRE</h1>
+			<div>
+				Escopo da div
+				<p>Escopo do P</p>
+			</div>
+			<Produtos produtos={produtos} />
+		</>
+	);
 }
 
 // 3 – Crie um componente chamado Produtos. ( 1,5 Pontos)
 // Esse componente deve receber através de props do componente App.jsx :
 // a) A lista de produtos, no caso o state.
-
 
 // 2 – No App.jsx crie a seguinte estrutura. ( 3,5 Pontos)
 // a) Adicione um fragmento.
