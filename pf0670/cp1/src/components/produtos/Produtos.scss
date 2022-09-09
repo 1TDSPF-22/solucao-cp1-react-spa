@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$color-hover : #7a8;
+
+.tblProdutos{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90vw;
+    margin: auto;
+
+
+        td, th{
+            border: 2px solid #ddd;
+            padding: 6px;
+        }
+
+        tr{
+            &:nth-child(even){
+                background-color: #7a80b4;
+            }
+            
+            &:hover{
+                background-color: darken($color: $color-hover, $amount: 30);
+            }
+        }
+
+        th{
+            text-align: left;
+            background-color: blue;
+            color: #ddd;
+            padding: 1.2vh 0;
+        }
+
+    tfoot td {
+        padding: 0;
+    }
+    
+    tfoot td caption{
+        display: block;
+        text-align: center;
+        background-color: blue;
+        color: #ddd;
+        padding: 1.2vh 0;
+        font-weight: bold;
+    }
+
+}

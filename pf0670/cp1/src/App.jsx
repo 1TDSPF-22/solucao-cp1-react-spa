@@ -71,6 +71,14 @@ export default function App() {
     return (
         <>
             <h1>CP1 de RWD 2º SEMESTRE</h1>
+
+            <div>
+                Escopo da DIV
+                <p>
+                    Escopo do P
+                </p>
+            </div>
+
             <Produtos produtos={produtos} />
         </>
     )
