@@ -1,0 +1,16 @@
+@import 'titulo';
+$text-color: #000000;
+$back-ground: #be9a9a;
+
+body{
+    background-color: $back-ground;
+    color: $text-color;
+}
+
+div { 
+    $p-color: blue;
+    p{
+        color: $p-color;
+    }
+}
+

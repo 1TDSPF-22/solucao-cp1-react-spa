@@ -9,33 +9,41 @@
     border-collapse: collapse;
     width: 90vw;
     margin: auto;
-}
 
-.tblProdutos td, .tblProdutos th{
+
+td, th{
     border: 2px solid #ddd;
     padding: 6px;
 }
 
-.tblProdutos tr:nth-child(even){
-    background-color: #ab96ab;
+tr{
+    &:nth-child(even){
+        background-color: #ab96ab;
+    }
+
+    &:hover{
+        background-color: darken($color: #ab96ab, $amount: 15)
+    }
+
 }
 
-.tblProdutos th{
+th{
     text-align: left;
     background-color: purple;
     color: #ddd;
     padding: 1.2vh 0;
 }
 
-.tblProdutos tfoot td{
+tfoot td{
     padding: 0;
 }
 
-.tblProdutos tfoot td caption{
+tfoot td caption{
     display: block;
     text-align: center;
     background-color: purple;
     color: #ddd;
     padding: 1.2vh 0;
     font-weight: bold;
+}
 }
