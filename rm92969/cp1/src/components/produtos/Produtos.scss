@@ -20,7 +20,7 @@
                 background-color: #8d8283
             }
             &:hover{
-                background-color: #ccc
+                background-color: darken($color: #8d8283, $amount: 300)
             }
         }
 
