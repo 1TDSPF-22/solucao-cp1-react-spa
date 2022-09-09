@@ -5,7 +5,8 @@ import Produtos from "./components/produtos/Produtos"
 
 export default function App(){
 
-    const listaDeProdutos = [
+
+    const[produtos, setProdutos] = useState([
         {
             nomeProduto: "mouse",
             qtd: 100,
@@ -31,9 +32,7 @@ export default function App(){
             qtd: 180,
             categoria: "informática"
         },
-    ]
-
-    const[produtos, setProdutos] = useState(listaDeProdutos)
+    ])
 
 
 

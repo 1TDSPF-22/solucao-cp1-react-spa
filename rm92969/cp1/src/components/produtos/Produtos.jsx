@@ -1,37 +1,36 @@
 import React from 'react'
-import './Produtos.css
-'
-
+import './Produtos.scss'
 export default function Produtos(props) {
-    return(
+    return (
         <div>
-            <h2>Produtos</h2>
+            <h2>PRODUTOS</h2>
 
-            <table className="tblProdutos">
+            <table className="tblProdutos" border={1}>
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Produtos</th>
+                        <th>Produto</th>
                         <th>Qtd</th>
-                        <th>categoria</th>
+                        <th>Categoria</th>
                     </tr>
                 </thead>
                 <tbody>
+
                     {props.produtos.map((p, i) =>
-                        //<tr key="{i}" style={i%2===0 ? {backgroundColor: "#ccc"} : {backgroundColor: "#afc" }}>
-                        <tr key={i}">
-                            <td>{i+1}</td>
+                        // <tr key={i} style={i % 2 === 0 ? { backgroundColor: "#ccc" } : { backgroundColor: "#afc" }}>
+                        <tr key={i}>
+                            <td>{i + 1}</td>
                             <td>{p.nomeProduto}</td>
                             <td>{p.qtd}</td>
                             <td>{p.categoria}</td>
                         </tr>
-
                     )}
+
                 </tbody>
                 <tfoot>
                     <tr>
                         <td colSpan={4}>
-                            <caption>Produtos</caption>
+                            <caption>PRODUTOS</caption>
                         </td>
                     </tr>
                 </tfoot>
